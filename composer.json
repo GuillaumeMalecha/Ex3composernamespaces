@@ -1,0 +1,19 @@
+{
+    "name": "guill/ex3composernamespaces",
+    "description": "exercice pour les cours du soir",
+    "type": "project",
+    "require": {
+        "fakerphp/faker": "^1.20"
+    },
+    "autoload": {
+        "psr-4": {
+            "Guill\\Ex3composernamespaces\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "GuillaumeMalecha",
+            "email": "guillaume.malecha@gmail.com"
+        }
+    ]
+}

@@ -1,8 +1,30 @@
 <?php
 
 require_once 'vendor/autoload.php';
-include_once PersonneManager::class;
 
+use Guill\Ex3composernamespaces\manager\PersonneManager;
 
+$listePersonnes = PersonneManager::create(10);
 
-echo $faker->name();
+//$personne = new PersonneManager();
+//$personne->create();
+
+?>
+
+<table>
+    <tr>
+        <th>Prénom</th>
+        <th>Nom</th>
+        <th>Adresse</th>
+    </tr>
+    <?php
+    foreach ($listePersonnes as $personne) {
+    ?>
+    <tr>
+        <td><?php echo $personne->getNom(); ?></td>
+    </tr>
+    <?php
+    }
+    ?>
+</table>
+

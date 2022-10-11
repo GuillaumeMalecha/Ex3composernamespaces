@@ -1,5 +1,7 @@
 <?php
 
+namespace Guill\Ex3composernamespaces\Entity;
+
 class Personne
 {
     private $nom;

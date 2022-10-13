@@ -5,5 +5,7 @@ use Faker\Factory;
 class PersonneManager extends Personne
 {
     public function Create()
-$faker = Faker\Factory::create();
+    {
+        $faker = Faker\Factory::create();
+    }
 }
